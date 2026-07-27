@@ -1,0 +1,47 @@
+{
+    "adapters": [
+        { "id": "t0", "type": 0, "script": "./adapter/T0Adapter.js", "share": { "shareable": true, "dirName": "t0" } },
+        { "id": "t1", "type": 1, "script": "./adapter/T1Adapter.js", "share": { "shareable": true, "dirName": "t1" } },
+        { "id": "t4", "type": 4, "script": "./adapter/T4Adapter.js", "share": { "shareable": true, "dirName": "t4" } },
+        { "id": "t5", "type": 5, "script": "./adapter/T5Adapter.js", "share": { "shareable": false, "dirName": "t5", "unshareableMsg": "T5源包含整个 Node 环境目录，请使用文件管理器打包分享" } },
+        
+        { 
+            "id": "t3_xbpq", "type": 3, "apiMatch": ["csp_XBPQ"], "script": "./adapter/T3/XBPQAdapter.js", 
+            "share": { "shareable": true, "dirName": "t3_xbpq", "processExtAsJsonObj": true, "stripLocalJar": true } 
+        },
+        { 
+            "id": "t3_xyq", "type": 3, "apiMatch": ["csp_XYQHiker"], "script": "./adapter/T3/XYQAdapter.js", 
+            "share": { "shareable": true, "dirName": "t3_xyq", "processExtAsJsonObj": true, "stripLocalJar": true } 
+        },
+        { 
+            "id": "t3_drpy2", "type": 3, "apiMatch": ["drpy2.min.js", "drpy2.js", ".js"], "script": "./adapter/T3/Drpy2Adapter.js", 
+            "share": { "shareable": true, "dirName": "t3_drpy2", "processExtAsScript": true } 
+        },
+        { 
+            "id": "t3_py", "type": 3, "apiMatch": [".py"], "script": "./adapter/T3/PyAdapter.js", 
+            "share": { "shareable": true, "dirName": "t3_py", "processApiAsScript": true } 
+        },
+        { 
+            "id": "t3_appmumo", "type": 3, "apiMatch": ["csp_AppMuou", "csp_HBmoou"], "script": "./adapter/T3/AppMumoAdapter.js", 
+            "share": { "shareable": true, "dirName": "t3_appmumo", "stripLocalJar": true } 
+        },
+        { 
+            "id": "t3_appysv2", "type": 3, "apiMatch": ["csp_AppYsV2"], "script": "./adapter/T3/AppYsV2Adapter.js", 
+            "share": { "shareable": true, "dirName": "t3_appysv2", "stripLocalJar": true } 
+        },
+        { 
+            "id": "t3_appget", "type": 3, "apiMatch": ["csp_AppGet", "csp_AppGet2"], "script": "./adapter/T3/AppGetAdapter.js", 
+            "share": { "shareable": true, "dirName": "t3_appget", "stripLocalJar": true } 
+        },
+        { 
+            "id": "unsupported_csp", "type": 3, "apiPrefix": ["csp_"], "script": "./adapter/T3/JarSpiderAdapter.js", 
+            "share": { "shareable": false, "dirName": "unsupported_csp", "unshareableMsg": "该源为未适配的 TVBox 原生爬虫，无法独立分享与运行！" } 
+        },
+        { 
+            "id": "t3_cat", "type": 3, "fallback": true, "script": "./adapter/CatvodAdapter.js", 
+            "share": { "shareable": true, "dirName": "t3_cat", "processApiAsScript": true } 
+        },
+        { "id": "catvod", "type": -2, "script": "./adapter/CatvodAdapter.js", "share": { "shareable": true, "dirName": "catvod" } }
+    ],
+    "jar": "./adapter/T3/JarSpiderAdapter.js"
+}

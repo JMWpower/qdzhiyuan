@@ -1,0 +1,7 @@
+{
+    "name": "DrpyHiker",
+    "version": "118",
+    "main": "./subpage/mian.js",
+    "author": "LoyDgIk",
+    "license": "GPL-3.0-only"
+}
