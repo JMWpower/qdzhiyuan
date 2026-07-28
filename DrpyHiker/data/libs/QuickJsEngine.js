@@ -1,4 +1,4 @@
-let libs = module.importParam || 'hiker://files/data2/' + MY_RULE.title;
+let libs = module.importParam || 'hiker://files/rules/' + MY_RULE.title;
 
 function importClass(clsname) {
     return new org.mozilla.javascript.NativeJavaClass(this, findJavaClass(clsname));
